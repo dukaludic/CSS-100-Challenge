@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3faf82;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  width: 80px;
+  height: 46px;
+}
+
+.line-2 {
+  margin: 0 auto 15px auto;
+}
+
+input {
+  display: none;
+}
+
+.line {
+  background-color: #fff;
+  margin-bottom: 15px;
+  height: 8px;
+  width: 80px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+
+input:checked + label .container .line-1 {
+  -webkit-animation: example2 1s forwards;
+          animation: example2 1s forwards;
+}
+
+input:checked + label .container .line-3 {
+  -webkit-animation: example1 1s forwards;
+          animation: example1 1s forwards;
+}
+
+input:checked + label .container .line-2 {
+  width: 0;
+}
+
+@-webkit-keyframes example1 {
+  25% {
+    transform: translate(0, -23px);
+  }
+  75% {
+    transform: translate(0, -23px);
+  }
+  100% {
+    transform: rotate(45deg) translate(-14px, -14px);
+  }
+}
+
+@keyframes example1 {
+  25% {
+    transform: translate(0, -23px);
+  }
+  75% {
+    transform: translate(0, -23px);
+  }
+  100% {
+    transform: rotate(45deg) translate(-14px, -14px);
+  }
+}
+@-webkit-keyframes example2 {
+  25% {
+    transform: translate(0, 23px);
+  }
+  75% {
+    transform: translate(0, 23px);
+  }
+  100% {
+    transform: rotate(135deg) translate(17px, -20px);
+  }
+}
+@keyframes example2 {
+  25% {
+    transform: translate(0, 23px);
+  }
+  75% {
+    transform: translate(0, 23px);
+  }
+  100% {
+    transform: rotate(135deg) translate(17px, -20px);
+  }
+}
