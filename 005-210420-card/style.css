@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2b3642;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background-color: white;
+  width: 300px;
+  height: 220px;
+}
+
+.heading {
+  background-color: #3d4d5e;
+  height: 40px;
+  display: flex;
+}
+
+.icon-container {
+  height: 15px;
+  width: 10px;
+  border: 1px solid #93b2cd;
+  margin-right: 5px;
+  color: #93b2cd;
+  position: relative;
+}
+
+.icon-bg-right {
+  height: 100%;
+  width: 40px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container p {
+  position: absolute;
+  bottom: -6px;
+  font-size: 6px;
+  font-weight: 700;
+}
+
+.icon-bg {
+  height: 100%;
+  width: 40px;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-bg:hover {
+  background-color: #5da2ed;
+}
+
+.text-wrapper {
+  width: 250px;
+  margin: 0 25px;
+}
+
+.text-wrapper h3 {
+  font-weight: 200;
+  color: #5a6e7c;
+  font-size: 18px;
+  color: #415868;
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.text-wrapper .line {
+  height: 3px;
+  background-color: #e9e9e9;
+  border: none;
+  margin-bottom: 6px;
+}
+
+.text-wrapper .line:nth-child(2) {
+  width: 230px;
+}
+
+.text-wrapper .line:nth-child(4) {
+  width: 200px;
+}
+
+.text-wrapper .line:nth-child(5) {
+  width: 240px;
+}
+
+.text-wrapper .line:nth-child(6) {
+  width: 50px;
+}
+
+.text-wrapper .line:nth-child(7) {
+  width: 0;
+}
+
+.text-wrapper .line:nth-child(8) {
+  width: 240px;
+}
+
+.text-wrapper .line:nth-child(8) {
+  width: 230px;
+}
+
+.text-wrapper .line:nth-child(9) {
+  width: 190px;
+}
+
+.text-wrapper .line:nth-child(10) {
+  width: 220px;
+}
+
+.text-wrapper .line:nth-child(11) {
+  width: 240px;
+}
+
+.text-wrapper .line:nth-child(12) {
+  width: 80px;
+}
