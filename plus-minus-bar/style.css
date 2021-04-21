@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(to top right, #d35b2a, #fcad39);
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bar {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border-radius: 25px;
+  filter: drop-shadow(0 0 0.5rem rgba(160, 150, 210, 0.8));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle-left {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin-left: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.circle-left:hover {
+  background-color: #e26e6e;
+}
+
+.circle-left:hover .minus {
+  background-color: white;
+}
+
+.circle-right:hover {
+  background-color: #8ed273;
+}
+
+.circle-right:hover .plus-1 {
+  background-color: white;
+}
+
+.circle-right:hover .plus-2 {
+  background-color: white;
+}
+
+.circle-right {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  transition: all 0.4s;
+}
+
+.minus {
+  height: 2.5px;
+  width: 22px;
+  background-color: #e26e6e;
+}
+
+.plus-1 {
+  height: 2.5px;
+  width: 22px;
+  background-color: #8ed273;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plus-2 {
+  height: 22px;
+  width: 2.5px;
+  background-color: #8ed273;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plus {
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -135%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a85a0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.number-clone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -135%);
+  font-size: 20px;
+  font-weight: bold;
+  color: #6a85a0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
