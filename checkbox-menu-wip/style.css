@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #4A627A;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upper {
+  width: 275px;
+  height: 2px;
+  background-color: white;
+}
+
+.lower {
+  width: 275px;
+  height: 2px;
+  background-color: white;
+}
+
+.inner-container {
+  display: flex;
+}
+
+.inner-container p {
+  color: white;
+  font-weight: 700;
+  margin: 20px 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.inner-container p:hover {
+  color: #b7c0ca;
+}
+
+.mycheckbox:checked ~ .upper {
+  width: 50px;
+}
+
+.mycheckbox:checked ~ .lower {
+  width: 50px;
+}
+
+.mycheckbox:checked ~ p {
+  opacity: 0;
+  display: none;
+}
